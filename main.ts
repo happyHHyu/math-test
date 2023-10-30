@@ -13,8 +13,10 @@ input.onButtonPressed(Button.AB, function () {
     if (count == 1) {
         if (answer == menu) {
             basic.showIcon(IconNames.Yes)
+            count += 1
         } else {
             basic.showIcon(IconNames.No)
+            basic.showNumber(menu)
         }
     } else if (count == 2) {
         start_menu = 0
